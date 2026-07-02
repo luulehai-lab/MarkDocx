@@ -37,7 +37,8 @@ my_stderr.log
 _mermaid_temp/
 settings.json
 
-# IDEs and editors
+# IDEs, agents and editors
+.agents/
 .vscode/
 .idea/
 *.suo
@@ -45,3 +46,17 @@ settings.json
 *.njsproj
 *.sln
 *.swp
+
+# Audit Reports & Conversations
+docs/*_REPORT*
+docs/history_conversations/
+
+# Temporary and test markdown/text files in root
+test_*.md
+test_*.txt
+test_out.txt
+TREE.txt
+
+# Images in root (except application logo)
+*.png
+!logo.png
