@@ -1,0 +1,47 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environment configurations
+.env
+.venv
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project temporary and output files
+temp_render/
+scratch/
+.gemini/
+*.log
+my_stderr.log
+_mermaid_temp/
+settings.json
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

@@ -1,0 +1,12 @@
+project_root/
+├── .env
+├── requirements.txt
+├── main.py
+├── config.py
+├── backend/
+│   ├── __init__.py
+│   └── md_parser.py
+└── frontend/
+    ├── __init__.py
+    ├── main_window.py
+    └── styles.py

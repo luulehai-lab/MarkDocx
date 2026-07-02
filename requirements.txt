@@ -1,0 +1,8 @@
+# Tên file: requirements.txt
+# CHANGELOG:
+# - 2026-04-02: [KHỞI TẠO] Khởi tạo các thư viện cần thiết cho dự án. (Lê Hải Lưu)
+
+PyQt6==6.4.2
+PyQt6-WebEngine==6.4.0
+Markdown==3.5.2
+python-dotenv==1.0.1pymdown-extensions==10.21.2
