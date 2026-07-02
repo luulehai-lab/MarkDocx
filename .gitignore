@@ -47,9 +47,9 @@ settings.json
 *.sln
 *.swp
 
-# Audit Reports & Conversations
-docs/*_REPORT*
-docs/history_conversations/
+# Dev folders
+docs/
+scripts/
 
 # Temporary and test markdown/text files in root
 test_*.md
