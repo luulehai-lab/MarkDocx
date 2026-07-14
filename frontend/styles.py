@@ -1,6 +1,7 @@
 # Tên file: frontend/styles.py
 # CHỨC NĂNG: Định nghĩa hệ thống CSS cho Markdown và các thành phần giao diện.
 # CHANGELOG:
+# - 16:07:00 14/07/2026: [UPDATE] Cập nhật CSS cho .mermaid và .mermaid svg để hỗ trợ cuộn ngang tự nhiên và tránh co cụm biểu đồ (Lê Thanh Vân/Antigravity)
 # - 15:00:00 02/07/2026: [REFACTOR] Tách chuỗi CSS tĩnh ra hằng số module MARKDOWN_CSS_BODY để rút ngắn get_full_css xuống dưới 15 dòng (Lê Thanh Vân/Antigravity)
 # - 17:20:00 28/05/2026: [UPDATE] Nâng cấp hiệu ứng hover cho .mermaid mang lại trải nghiệm Premium. (Antigravity)
 
@@ -141,14 +142,19 @@ pre {
 
 .mermaid {
     background-color: var(--card-bg);
-    display: flex;
-    justify-content: center;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     border: 1px solid var(--border-color);
     cursor: zoom-in;
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s, box-shadow 0.2s;
+    overflow-x: auto;
+    max-width: 100%;
+}
+.mermaid svg {
+    display: block;
+    margin: 0 auto;
+    max-width: none !important;
 }
 .mermaid:hover {
     transform: translateY(-2px);
